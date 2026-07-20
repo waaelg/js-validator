@@ -59,7 +59,7 @@ class Validator {
    * @returns {boolean} - True if the length is at least the minimum, otherwise false.
    */
   isMin(str, min) {
-    return str.length >= min;
+    return String(str).length >= min;
   }
 
   /**
@@ -69,7 +69,7 @@ class Validator {
    * @returns {boolean} - True if the length is at most the maximum, otherwise false.
    */
   isMax(str, max) {
-    return str.length <= max;
+    return String(str).length <= max;
   }
 
   /**
@@ -80,7 +80,8 @@ class Validator {
    * @returns {boolean} - True if the length is within the range, otherwise false.
    */
   isMinMax(str, min, max) {
-    return str.length >= min && str.length <= max;
+    const len = String(str).length;
+    return len >= min && len <= max;
   }
 }
 

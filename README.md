@@ -16,7 +16,7 @@
 
 نقوم باستيراد الكلاس لملفنا الأساسي :
 ````javascript
-import Validator from "./Validator.js";
+import Validator from "./Validation.js";
 ````
 نقوم بإنشاء كائن من الكلاس :
 ````javascript
